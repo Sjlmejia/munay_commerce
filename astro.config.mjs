@@ -6,6 +6,7 @@ import vue from '@astrojs/vue';
 import svelte from "@astrojs/svelte"
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://munay.tips',
   integrations:[tailwind(), mdx(), react(), vue(), svelte()]
 });
 

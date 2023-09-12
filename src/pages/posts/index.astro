@@ -3,9 +3,9 @@ import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 import Header from "../../components/Header.astro";
 import Hero from  "../../components/Hero.astro";
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
 const posts =  (await getCollection("tips")).sort(
-  (a,b) => a.data.pubdate.valueOf() - b.data.pubdate.valueOf()
+  (a,b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
 
 ---
@@ -16,7 +16,7 @@ const posts =  (await getCollection("tips")).sort(
     <Hero />
     <ul role="list" class="link-card-grid">
       {
-        posts.map(post => (
+        posts.map((post: { data: { title: string; pubdate: string; tags: string[]; }; slug: string | undefined; }) => (
           <Card title={post?.data.title}
             time={post?.data.pubdate}
             tags={post?.data.tags}

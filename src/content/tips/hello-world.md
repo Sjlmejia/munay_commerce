@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-pubdate: 2024-05-08
+pubDate: 2024-05-08
 description: "Hello this is my first recommendation"
 image: "https://api.lorem.space/image/fashion?w=640&h=480&r=3027"
 tags: ["astro1", "javascript1"]

@@ -1,6 +1,6 @@
 ---
 title: "Hello Javascript"
-pubdate: 2024-05-09
+pubDate: 2024-05-09
 description: "Hello this is my first recommendation"
 image: "https://api.lorem.space/image/fashion?w=640&h=480&r=3027"
 tags: ["astro4", "javascrip4"]
